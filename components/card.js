@@ -3,7 +3,7 @@ import test from '../public/test.jpeg';
 
 const Card = (props) => {
   return (
-    <div className='container rounded-lg shadow border-gray-200 border-2 m-5 mx-auto grid gap-4 grid-cols-2 max-w-4xl p-5'>
+    <div className='container rounded-lg shadow border-gray-200 border-2 m-5 mx-auto grid gap-4 grid-cols-2 max-w-4xl p-5 dark:bg-gray-800 '>
       <div className='container rounded-md m-2 w-110'>
         <Image
           src={test}
@@ -12,21 +12,24 @@ const Card = (props) => {
         />
       </div>
       <div className='container m-3 '>
-        <h4 className='m-3 text-gray-500 uppercase text-xl text-center font-bold '>
+        <h4 className='m-3 text-gray-500 dark:text-white uppercase text-xl text-center font-bold '>
           2019 Chevrolet Silverado 1500
         </h4>
+        <p className='uppercase text-center text-lg font-semibold dark:text-gray-200'>
+          LT Trim Package
+        </p>
         <p className='text-3xl font-bold text-blue-500 text-center my-9'>
           $76,000
         </p>
         <div className='container grid grid-cols-3 text-center mt-8 mx-auto '>
-          <p className='font-semibold'>
-            Engine:<span className='text-green-500 font-light'> V6</span>
+          <p className='font-semibold dark:text-white'>
+            Engine:<span className='text-green-500'> V6</span>
           </p>
-          <p className='font-semibold'>
-            Trans: <span className='text-green-500 font-light'>Automatic</span>
+          <p className='font-semibold dark:text-white'>
+            Trans: <span className='text-green-500 '>Automatic</span>
           </p>
-          <p className='font-semibold'>
-            Mileage: <span className='text-green-500 font-light'>110,201</span>
+          <p className='font-semibold dark:text-white'>
+            Mileage: <span className='text-green-500 '>110,201</span>
           </p>
         </div>
         {/* Card Button Group Start */}
@@ -42,7 +45,7 @@ const Card = (props) => {
           </button>
         </div>
         <div>
-          <button className='min-w-full py-3 border-2 mt-2 rounded-md border-gray-500 font-bold uppercase hover:bg-gray-500 hover:text-white my-10 hover:border-black shadow-lg'>
+          <button className='min-w-full py-3 border-2 mt-2 rounded-md border-gray-500 font-bold uppercase hover:bg-gray-500 hover:text-white my-10 hover:border-black shadow-lg dark:border-gray-300 dark:text-gray-200'>
             More Details
           </button>
         </div>

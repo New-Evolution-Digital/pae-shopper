@@ -1,13 +1,12 @@
-import Card from '../components/card';
+import DisplayContainer from '../components/DisplayContainer';
 
 export default function Home() {
   return (
-    <div>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+    <div className='dark:bg-black'>
+      <head>
+        <title>Automodiv</title>
+      </head>
+      <DisplayContainer />
     </div>
   );
 }
